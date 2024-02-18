@@ -1,0 +1,22 @@
+{
+  "name": "Stanger by Mahrus Rohisyam",
+  "description": "Inject $ to any display in your wallet",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://stake.com/*"],
+      "js": ["app.js", "jquery.js", "popup.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "stanger_asset/russ-logo.png",
+      "24": "stanger_asset/russ-logo.png",
+      "32": "stanger_asset/russ-logo.png"
+    },
+    "default_title": "Stanger by Mahrus Rohisyam",
+    "default_popup": "popup.html"
+  }
+}
